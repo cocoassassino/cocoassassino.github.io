@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Join the Wilson: The Killer Poop test</title>
+<meta name="description" content="Closed test on Google Play: join the group, tap Become a tester and play Wilson before everyone else.">
+<meta property="og:title" content="Join the Wilson: The Killer Poop test">
+<meta property="og:description" content="2 links, 1 minute. Play before everyone else on Android.">
+<meta property="og:image" content="https://cocoassassino.github.io/../assets/og.jpg">
+<meta property="og:url" content="https://cocoassassino.github.io/en/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#173f47">
+<link rel="icon" href="../assets/favicon.png">
+<style>
+@font-face{font-family:'PS2P';src:url('../assets/press-start-2p-latin-400-normal.woff2') format('woff2');unicode-range:U+0000-00FF;font-display:swap}
+@font-face{font-family:'PS2P';src:url('../assets/press-start-2p-latin-ext-400-normal.woff2') format('woff2');unicode-range:U+0100-024F;font-display:swap}
+:root{--ink:#181425;--cream:#fff4e0;--paper:#f3e6c9;--gold:#fee761;--red:#e43b44;--green:#63c74d;--blue:#0b57d0;--muted:#5a5068}
+*{box-sizing:border-box}
+html{background:#173f47}
+body{margin:0;min-height:100vh;background:#318a90 url(../assets/tile.png) 0 0/192px 192px;image-rendering:auto;color:var(--ink);
+  font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.px{image-rendering:pixelated}
+main{max-width:560px;margin:0 auto;padding:28px max(16px,env(safe-area-inset-right)) 48px max(16px,env(safe-area-inset-left))}
+.logo{display:block;width:min(86%,380px);height:auto;margin:8px auto 0;image-rendering:pixelated}
+h1,.pf{font-family:'PS2P',monospace;font-weight:400;letter-spacing:0}
+h1{color:var(--gold);text-align:center;font-size:clamp(20px,6vw,28px);line-height:1.5;margin:22px 0 4px;
+  -webkit-text-stroke:.16em var(--ink);paint-order:stroke fill;text-shadow:.14em .14em 0 var(--ink)}
+.sub{font-family:'PS2P',monospace;color:var(--cream);text-align:center;font-size:12px;line-height:1.9;margin:0 0 22px;
+  -webkit-text-stroke:.18em var(--ink);paint-order:stroke fill;text-shadow:.16em .16em 0 var(--ink)}
+.card{background:var(--cream);border:5px solid var(--ink);box-shadow:8px 8px 0 var(--ink);padding:18px 18px 20px;margin:0 0 22px;position:relative}
+.head{display:flex;align-items:center;gap:14px}
+.num{flex:none;width:52px;height:52px;display:flex;align-items:center;justify-content:center;background:var(--gold);border:4px solid var(--ink);
+  font:400 24px 'PS2P',monospace;padding-top:3px}
+.num.ok{background:var(--green)}
+.card h2{font:400 15px/1.6 'PS2P',monospace;margin:0}
+.card p{margin:12px 0 0}
+.note{color:var(--muted);font-size:15px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:16px;min-height:60px;padding:14px 16px 11px;text-decoration:none;
+  font:400 14px/1.4 'PS2P',monospace;color:var(--cream);background:var(--blue);border:4px solid var(--ink);box-shadow:0 6px 0 var(--ink);text-align:center}
+.btn.green{background:#01875f}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 var(--ink)}
+.btn:focus-visible{outline:4px solid var(--gold);outline-offset:3px}
+.btn img{width:28px;height:auto;flex:none}
+.tip{display:flex;gap:12px;align-items:flex-start;background:var(--paper);border:3px dashed #8a7f6a;padding:12px 14px;margin-top:14px;font-size:15px}
+.tip b{font-weight:700}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:14px}
+.days span{aspect-ratio:1;border:3px solid var(--ink);background:#fff;display:flex;align-items:center;justify-content:center;font:400 10px 'PS2P',monospace}
+.days span:nth-child(-n+3){background:var(--green);color:#fff}
+details{background:var(--cream);border:5px solid var(--ink);box-shadow:8px 8px 0 var(--ink);margin:0 0 14px;padding:0}
+summary{cursor:pointer;padding:16px 18px;font:400 12px/1.7 'PS2P',monospace;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';float:right;font-size:16px}
+details[open] summary::after{content:'–'}
+details p{margin:0;padding:0 18px 16px}
+.faq-t{font-family:'PS2P',monospace;color:var(--cream);font-size:14px;margin:34px 0 14px;-webkit-text-stroke:.18em var(--ink);paint-order:stroke fill;text-shadow:.16em .16em 0 var(--ink)}
+footer{text-align:center;margin-top:34px;color:var(--cream);font-size:14px;text-shadow:2px 2px 0 var(--ink)}
+footer a{color:var(--gold)}
+.wilson{display:block;width:96px;margin:26px auto 8px;image-rendering:pixelated;filter:drop-shadow(4px 4px 0 var(--ink))}
+/* maiúscula acentuada montada em pixel (mesma receita do jogo) */
+.acc{position:relative;display:inline-block}
+.acc::before{content:'';position:absolute;left:0;top:-.3em;width:.125em;height:.125em;background:transparent;-webkit-text-stroke:0}
+.acc[data-a="´"]::before{box-shadow:.5em 0 0 currentColor,.625em 0 0 currentColor,.375em .125em 0 currentColor,.5em .125em 0 currentColor}
+.acc[data-a="^"]::before{box-shadow:.375em 0 0 currentColor,.25em .125em 0 currentColor,.5em .125em 0 currentColor}
+.acc[data-a="~"]::before{box-shadow:.25em 0 0 currentColor,.125em .125em 0 currentColor,.375em .125em 0 currentColor,.5em 0 0 currentColor,.625em 0 0 currentColor}
+.acc.ced::before{top:auto;bottom:-.25em;box-shadow:.375em 0 0 currentColor,.25em .125em 0 currentColor}
+@media (prefers-reduced-motion:no-preference){.wilson{animation:hop 1.2s steps(2) infinite}@keyframes hop{50%{transform:translateY(-6px)}}}
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="../assets/logo_en.png" alt="Wilson: The Killer Poop" width="1109" height="539">
+  <h1 data-caps>Join the test</h1>
+  <p class="sub" data-caps>Play before everyone else<br>2 links · 1 minute · Android</p>
+
+  <section class="card">
+    <div class="head"><span class="num">1</span><h2 data-caps>Join the group</h2></div>
+    <p>Open the testers group and tap <b>Join group</b>.</p>
+    <a class="btn" href="https://groups.google.com/g/testadores-wilson" target="_blank" rel="noopener" data-caps>Open the group</a>
+    <div class="tip"><span aria-hidden="true">⚠️</span><span>Use <b>the same Google account as your phone</b>. With another account, step 2 won't work.</span></div>
+  </section>
+
+  <section class="card">
+    <div class="head"><span class="num">2</span><h2 data-caps>Become a tester</h2></div>
+    <p>On the test page, tap <b>Become a tester</b>.</p>
+    <a class="btn" href="https://play.google.com/apps/testing/com.cocoassassino.wilson" target="_blank" rel="noopener" data-caps>Become a tester</a>
+  </section>
+
+  <section class="card">
+    <div class="head"><span class="num">3</span><h2 data-caps>Get the game</h2></div>
+    <p>Install Wilson from the Play Store.</p>
+    <a class="btn green" href="https://play.google.com/store/apps/details?id=com.cocoassassino.wilson" target="_blank" rel="noopener"><img class="px" src="../assets/poop.png" alt=""><span data-caps>Open in Play Store</span></a>
+    <div class="tip"><span aria-hidden="true">🍪</span><span>Not showing up yet? <b>Relax!</b> It can take a few minutes. Grab a cookie and come back.</span></div>
+  </section>
+
+  <section class="card">
+    <div class="head"><span class="num ok">14</span><h2 data-caps>Stay 14 days</h2></div>
+    <p>Please stay opted in for <b>two weeks</b>. That's what unlocks the public launch. Opening the game now and then helps a lot.</p>
+    <div class="days" aria-hidden="true">
+      <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span>
+    </div>
+  </section>
+
+  <h2 class="faq-t" data-caps>FAQ</h2>
+  <details><summary data-caps>iPhone?</summary><p>Not yet. The test is <b>Android</b> only (Play Store).</p></details>
+  <details><summary data-caps>No "Become a tester" button</summary><p>Make sure you joined the group (step 1) with the same Google account that is on your phone. If you have more than one account, switch to it in Google Play.</p></details>
+  <details><summary data-caps>Is it free?</summary><p>Yes. The game is free. The full version is an optional in-app purchase.</p></details>
+  <details><summary data-caps>Testing exchange?</summary><p>Sure! Drop your app link where you found this page and we'll test yours back for the full 14 days.</p></details>
+
+  <img class="wilson" src="../assets/wilson_coroa.png" alt="" width="64" height="55">
+  <footer>Made by a dad and his son · <a href="../privacidade/#en">Privacy policy</a> · <a href="../" hreflang="pt-BR">Português</a></footer>
+</main>
+<script>
+// Press Start 2P encolhe as maiúsculas acentuadas: montamos letra + acento em pixel (igual ao jogo)
+const ACC={'Á':['A','´'],'Â':['A','^'],'Ã':['A','~'],'É':['E','´'],'Ê':['E','^'],'Í':['I','´'],'Ó':['O','´'],'Ô':['O','^'],'Õ':['O','~'],'Ú':['U','´'],'Ç':['C','¸']};
+for(const el of document.querySelectorAll('[data-caps]')){const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),L=[];for(let n=w.nextNode();n;n=w.nextNode())L.push(n);
+  for(const n of L){const f=document.createDocumentFragment();for(const c of n.nodeValue.toUpperCase()){const a=ACC[c];if(!a){f.appendChild(document.createTextNode(c));continue}
+    const s=document.createElement('span');s.className='acc'+(c==='Ç'?' ced':'');s.dataset.a=a[1];s.textContent=a[0];f.appendChild(s)}n.parentNode.replaceChild(f,n)}}
+</script>
+</body>
+</html>
